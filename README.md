@@ -1,0 +1,21 @@
+# Decipha styleguide
+
+This repository documents the HTML/CSS components used in the Decipha website.
+
+## To use
+
+Go to the root of the decipha-styleguide directory, then&hellip;
+
+```
+npm install
+
+npm start
+```
+
+Then navigate to `localhost:8080` to view the components with their descriptions and code examples.
+
+## Page layout
+
+An example of the page template is available at `layout.html` (`localhost:8080/layout.html`)
+
+

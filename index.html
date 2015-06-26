@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if IE 7]>     <html class="ie ie7 lt-ie8 lt-ie9" dir="ltr"
+lang="en-GB"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lt-ie9" dir="ltr" lang="en-GB">
+<![endif]-->
+<!--[if IE 9]>     <html class="ie ie9" dir="ltr" lang="en-GB"> <![endif]-->
+<!--[if gt IE 9]>  <html dir="ltr" lang="en-GB"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="en-GB"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/styleguide.css" rel="stylesheet" media="all" />
+	<link rel="icon" href="favico.png" type="image/png" />
+  	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic' rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
+  	<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
+	<script language="javascript" type="text/javascript">
+	  function resizeIframe(obj) {
+	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  }
+	</script>
+	<title>Decipha Styleguide</title>
+	<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<h1>Decipha Styleguide</h1>
+	<div class="component">
+		<h2>Headings</h2>
+		<p>Only use <code>h1</code> once per page, at the top of the content.</p>
+<pre><code>&lt;h1&gt;&lt;span&gt;About us&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;A subheading&lt;/h2&gt;
+&lt;h3&gt;Third level heading&lt;/h3&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/headings.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+	</div>
+	<div class="component">
+		<h2>In this page</h2>
+		<p>"In this page" is an an accessible navigation component for quickly navigating to subsections of a page. Only required on pages with numerous subsections. The URLs in the "in this page" links should point to ids on <code>&lt;h2&gt;</code> headings. For example, <code>href="#people"</code> going to <code>&lt;h2 id="people"&gt;</code>.</p>
+<pre><code>&lt;nav role="navigation"&gt;
+  &lt;h2&gt;In this page&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#people-of-decipha"&gt;Decipha, an introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#decipha"&gt;The people of Decipha&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#testimonial"&gt;Testimonial&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/in-this-page.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+	</div>
+	<div class="component">
+		<h2>Buttons</h2>
+		<p>Styles for actual button elements (<code>&lt;button&gt;</code>) or "button like" elements using the <code>.button-like</code> class.</p>
+<pre><code>&lt;!-- button --&gt;
+&lt;button&gt;This is a button&lt;/button&gt;
+
+&lt;!-- .button-like --&gt;
+&lt;a href="[url]" class="button-like"&gt;Button-like &lt;a&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/button.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+	</div>
+	<div class="component">
+		<h2>Text input with label</h2>
+		<p>Be sure to link the label to the input's <code>id</code> attribute with the label's <code>for</code> attribute.</p>
+<pre><code>&lt;label for="input-elem-id">Label for text input&lt;/label&gt;
+&lt;input type="text" id="input-elem-id"&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/text-input-and-label.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+	</div>
+	<div class="component">
+		<h2>Product grid</h2>
+		<p>Each product displays at 50% width by default but reconfigures for small screens. The images are decorative, so should have empty alt attributes as shown. The "find out more" links should link to <code>&lt;h2&gt;</code> headed sections for those products within the same page eg. <code>href="#decipha-reading"</code> linking to <code>&lt;h2 id="decipha-reading"&gt;Decipha Reading&lt;/h2&gt;</code>.</p>
+<pre><code>&lt;ul class="grid products" aria-label="Decipha products"&gt;
+  &lt;li&gt;
+    &lt;h2&gt;Decipha Reading&lt;/h2&gt;
+    &lt;img src="../images/dummy.png" alt=""&gt;
+    &lt;p class="price"&gt;
+      Price: &lt;em&gt;&pound;100&lt;/em&gt; 
+    &lt;/p&gt;
+    &lt;p&gt;Curabitur consectetur faucibus nisl ac varius. Donec a congue leo? Fusce ac sodales magna.&lt;/p&gt;
+    &lt;div&gt;&lt;a href="#decipha-reading" class="button-like"&gt;find out more&lt;/a&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2&gt;Dynamo Maths&lt;/h2&gt;
+    &lt;img src="../images/dummy.png" alt=""&gt;
+    &lt;p class="price"&gt;
+      Price: &lt;em&gt;&pound;150&lt;/em&gt; 
+    &lt;/p&gt;
+    &lt;p&gt;Donec et nisi dictum felis sollicitudin congue. Maecenas sit amet tellus nec mi gravida posuere non pretium magna.&lt;/p&gt;
+    &lt;div&gt;&lt;a href="#dynamo-maths" class="button-like"&gt;find out more&lt;/a&gt;&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/product-grid.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+	</div>
+</body>
+</html>

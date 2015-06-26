@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 18px;
+	color: #888;
+	font-family: monospace;
+	line-height: 1.5;
+}
+
+body {
+	padding: 1.5em;
+}
+
+body * + * {
+	margin-top: 1.5em;
+}
+
+li, dt, dd, option {
+	margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+	line-height: 1.125;
+	font-weight: normal;
+}
+
+code {
+	background: #888;
+	color: #fff;
+}
+
+pre code {
+	display: block;
+	padding: 1.5em;
+	white-space: pre;
+	overflow-x: scroll;
+	font-size: 0.9em;
+}
+
+p code {
+	padding: 0 0.25em;
+}
+
+iframe {
+	height: 0;
+	width: 100%;
+}
+
+.component {
+	padding: 1.5em;
+	border: 1px solid #bbb;
+}
