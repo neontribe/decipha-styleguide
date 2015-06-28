@@ -15,7 +15,10 @@ lang="en-GB"> <![endif]-->
   	<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
 	<script language="javascript" type="text/javascript">
 	  function resizeIframe(obj) {
-	    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  	//obj.style.height = 'auto';
+	  	setTimeout(function() {
+	  		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	  	}, 30);
 	  }
 	</script>
 	<title>Decipha Styleguide</title>
@@ -65,7 +68,7 @@ lang="en-GB"> <![endif]-->
 <pre><code>&lt;label for="input-elem-id">Label for text input&lt;/label&gt;
 &lt;input type="text" id="input-elem-id"&gt;</code></pre>
 		<h3>Demo</h3>
-		<iframe name="Stack" src="examples/text-input-and-label.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
+		<iframe name="Stack" src="examples/text-input-and-label.html" frameborder="0" scrolling="no" onload=' javascript:resizeIframe(this);'></iframe>
 	</div>
 	<div class="component">
 		<h2>Product grid</h2>

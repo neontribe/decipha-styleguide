@@ -1,6 +1,6 @@
 # Decipha styleguide
 
-This repository documents the HTML/CSS components used in the Decipha website. **Note:** Currently it should be run in Firefox, because Chome has trouble resizing the examples dynamically so they can become obscured.
+This repository documents the HTML/CSS components used in the Decipha website.
 
 ## To use
 
