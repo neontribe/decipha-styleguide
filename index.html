@@ -96,5 +96,25 @@ lang="en-GB"> <![endif]-->
 		<h3>Demo</h3>
 		<iframe name="Stack" src="examples/product-grid.html" frameborder="0" scrolling="no" onload='javascript:resizeIframe(this);'></iframe>
 	</div>
+	<div class="component">
+		<h2>People grid</h2>
+		<p>Individual people in the "people grid" are layed out 3 by 3. This configuration collapses automatically at small screen sizes. The code example shows just one list item / person. Just add more. Remember to fill in each social media URL as appropriate. The "About [name]" buttons should linkto subsections headed by <code>&lt;h2&gt;</code> elements. For example, <code>href="#about-nick"</code> going to <code>&lt;h2 id="about-nick"&gt;</code>.</p>
+<pre><code>&lt;ul class="grid thirds about-list"&gt;
+  &lt;li&gt;
+    &lt;img src="../images/dummy.png" alt=""&gt;
+    &lt;h3&gt;Janet Hoskin&lt;/h3&gt;
+    &lt;p class="subtitle"&gt;Director and SEN Advisor&lt;/p&gt;
+      &lt;ul aria-label="on social media" class="social small"&gt;
+        &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="icon-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="icon-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" aria-label="Linked In"&gt;&lt;span class="icon-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;Dr Janet Hoskin Dip SpLD (dyslexia) AMBDA MA PGCE BA(Hons) &lt;a href="mailto:janet@decipha.org"&gt;janet@decipha.org&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href="#about-janet" class="button-like"&gt;About Janet&lt;/a&gt;&lt;/p&gt;      
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		<h3>Demo</h3>
+		<iframe name="Stack" src="examples/people.html" frameborder="0" scrolling="no" onload=' javascript:resizeIframe(this);'></iframe>
+	</div>
 </body>
 </html>

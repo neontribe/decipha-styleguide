@@ -248,7 +248,15 @@ address span {
 ----------------------------*/
 
 header [role="navigation"] {
-  margin-top: -4em;
+  margin-top: 0.5em;
+}
+
+header .strap {
+  font-size: 1.25em;
+  margin-top: -3.75em;
+  position: relative;
+  font-style: italic;
+  font-weight: 300;
 }
 
 header [role="navigation"] ul {
@@ -455,6 +463,14 @@ cite {
   text-align: left;
 }
 
+.about-list h3 {
+  margin-top: 0.25em;
+}
+
+.about-list img {
+  max-width: 150px;
+}
+
 .subtitle {
   margin-top: 0;
 }
@@ -494,6 +510,7 @@ footer {
 
 .social.small {
   white-space: nowrap;
+  margin-top: 0;
 }
 
 .social.small li {
@@ -552,20 +569,19 @@ footer {
   .page {
     margin-top: 0;
   }
-
-  [role="navigation"] {
+  
+  header .strap {
     margin-top: 0;
   }
 
-  [role="navigation"] li {
+  header [role="navigation"] li {
     display: inline-block;
-    float: left;
     width: 48%;
     text-align: center;
     margin: 0;
   }
 
-  [role="navigation"]::after {
+  header [role="navigation"]::after {
     content: '\0020';
     height: 0;
     overflow: hidden;
