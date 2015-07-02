@@ -252,8 +252,8 @@ header [role="navigation"] {
 }
 
 header .strap {
-  font-size: 1.25em;
-  margin-top: -3.75em;
+  font-size: 0.9em;
+  margin-top: -5.125em;
   position: relative;
   font-weight: 300;
 }
